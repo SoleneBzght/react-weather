@@ -1,0 +1,18 @@
+import React from "react";
+
+export default function Footer() {
+  return (
+    <div className="Footer">
+      <small>
+        <a
+          href="https://github.com/SoleneBzght/vanilla-weather-app"
+          target="_blank"
+          className="githubLink"
+        >
+          Open-source code
+        </a>{" "}
+        by SoleneB
+      </small>
+    </div>
+  );
+}
