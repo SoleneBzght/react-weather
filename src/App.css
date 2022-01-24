@@ -1,6 +1,7 @@
 body {
   background-color: rgba(150, 170, 179, 0.5);
   color: #1b3745;
+  font-family: "poppins", sans-serif;
 }
 .app-wrap {
   max-width: 650px;
