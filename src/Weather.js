@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import Loader from "react-loader-spinner";
+import { Oval } from "react-loader-spinner";
 
 export default function Weather(props) {
   function handleResponse(response) {
@@ -10,9 +10,5 @@ export default function Weather(props) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
 
-  return (
-    <div className="Weather">
-      <h1>Hello from weather</h1>
-    </div>
-  );
+  return <Oval color="#00BFFF" height={80} width={80} />;
 }
